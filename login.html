@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+    <link rel="shortcut icon" href="connectify_favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+</head>
+
+
+<body oncontextmenu="false">
+
+
+	<input type="text" name="error" id="error" value="{{error}}" style="display: none;">
+<div class="container" id="container">
+		<div class="img" id="imgbasic">
+			<img src="login.png">
+		</div>
+
+        <!-- Login -->
+
+		<div class="login-content" id="login">
+			<form id="slogin" action="login.php" method="POST">
+				<span>
+                    <img src="connectify.png" alt="Connectify">
+                  </span>
+				<h2 class="title">Welcome</h2><br>
+
+           		<div class="input-div one">
+           		   <div class="i">
+                    <i class="fa-solid fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>UserName</h5>
+           		   		<input type="text" class="input" id="slmail" name="slmail">
+           		   </div>
+                   <span class="error"></span>
+           		</div>
+                
+
+           		<div class="input-div pass">
+           		   <div class="i"> 
+                    <i class='bx bxs-lock-alt' ></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Password</h5>
+           		    	<input type="password" class="input" id="slpass" name="slpass">
+            	   </div>
+                <span class="error"></span>
+            	</div>
+
+                <div class="radio">
+                        
+                    <div class="div">
+                         <i class='bx bxs-user'></i><span class="urolet">User Role</span>
+                         <span class="radioinput">
+                        <input type="radio" id="studentlogin" name="userrole" value="Customer">
+                            <label for="studentlogin">Customer</label>
+                        <input type="radio" id="tutorlogin" name="userrole" value="ServiceProvider">
+                            <label for="tutorlogin">Provider</label><br></span>
+                 </div>
+              <span class="error"></span>
+              </div>
+
+              
+
+            	<a href="#">Forgot Password?</a>
+
+            	<input type="submit" class="btn" value="Login">
+
+                <a class="newacc" href="#" onclick="myfunction()">Create an account now</a>
+            </form>
+        </div>
+
+        
+<script>
+
+
+const inputs = document.querySelectorAll(".input");
+
+
+    function addcl(){
+        let parent = this.parentNode.parentNode;
+        parent.classList.add("focus");
+    }
+    
+    function remcl(){
+        let parent = this.parentNode.parentNode;
+        if(this.value == ""){
+            parent.classList.remove("focus");
+        }
+    }
+    
+    
+    inputs.forEach(input => {
+        input.addEventListener("focus", addcl);
+        input.addEventListener("blur", remcl);
+    });
+   let uname =  document.getElementById("slmail").value;
+   let upass =  document.getElementById("slpass").value;
+    
+    </script>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="shortcut icon" href="connectify_favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Lato&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.color
+{
+	color: white;
+}
+.container1{
+	width: 100%;
+	
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+
+	background-color: #24262b;
+    padding: 70px 0;
+	width: 100%;
+	margin-left: 0px;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 100px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: crimson;
+	text-decoration: none;
+	font-weight: 300;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: none;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+
+}
+
+.column {
+  float: left;
+  width: 50%;
+  height:30vh;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #3A5BA0;
+  color: white;
+
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.para {
+  color: grey;
+  font-size: 27px;
+  word-spacing: 4px;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color:black;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 26px;
+}
+
+.button:hover {
+  background-color: gray;
+  color:crimson;
+}
+.seri{
+    float:left;
+}
+.hd{
+  font-family: "Poppins" ,sans-serif;
+  position:relative;
+ color:whitesmoke;
+ font-size:40px;
+ animation-name:head;
+ animation-duration:4s;
+ animation-iteration-count:1;
+}
+@keyframes head
+{
+    0%{left: 0px;}
+    50%{left:200px;}
+    100%{left:0px;}
+}
+
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    float:none;
+    display:  block;
+  }
+  .seri img
+   {
+      display:none;
+   }
+   .nope
+
+   {
+    padding-top: 40px;
+   }
+  .para{
+    font-size:14px;
+  }
+  .row1{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+   
+}
+.change:hover {
+  border-bottom:2px solid blue;
+}
+.change {
+  font-size: 32px;
+  color:crimson;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight:bold;
+}
+.container h2
+{
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 40px;
+   
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <a href="http://127.0.0.1:8000" class="hd"><img src="home_logo.png" height="50"></a>
+  <p><i>Welcome to CONNECTIFY,the largest network of professional service providers</i></p>
+  <p><i>You can hire them,book appoinments,ask for help and what not ?</i></p>
+</div>
+<br><br>
+<div class="row1">
+    <span class="change">HOW IT WORKS ?</span><br>
+    <p class="para">We are the known by our custommers for our quality serrvice ,users can access our services by creating an account and by creating an account they acceept our terms and conditions.We provide range of services such as medical,education,repairs and household.And all these service providers are trusted professionals having expertise in their field.</p>
+</div>
+<br><br>
+<footer class="footer">
+  <div class="container1">
+    <div class="row">
+      <div class="footer-col">
+        <h4>company</h4>
+        <ul>
+          <li><a href="#con1">about us</a></li>
+          <li><a href="#cont">our services</a></li>
+          <li><a href="#">privacy policy</a></li>
+          <li><a href="#">affiliate program</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>get help</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">order status</a></li>
+          <li><a href="#">payment options</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Office address </h4>
+        <span class="color">
+          13,ambedkar street,<br>
+          kodampakkam,<br>
+          chennai-607002<br>
+        </span>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+
+
+<script type="text/javascript">
+  (function(d, m){
+      var kommunicateSettings = 
+          {"appId":"359b681b66f0c563eb32ce8a10cfccc28","popupWidget":true,"automaticChatOpenOnNavigation":true};
+      var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+      s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+      var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+      window.kommunicate = m; m._globals = kommunicateSettings;
+  })(document, window.kommunicate || {});
+/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+</script>
+</body>
+</html>
