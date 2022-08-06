@@ -18,16 +18,7 @@ html {
 body {
     margin: 0
 }
-.book
-{
-    background-color: green;
-    color: white;
-    width: 200px;
-    padding:3px;
-    font-size:18px;
-    text-align: center;
-    height: 40px;
-}
+
 article,
 aside,
 details,
@@ -1127,7 +1118,7 @@ a {
 }
 
 .w3-codespan {
-    color: crimson;
+    color: #77b6ad;
     background-color: #f1f1f1;
     padding-left: 4px;
     padding-right: 4px;
@@ -1601,13 +1592,13 @@ a {
 .w3-deep-orange,
 .w3-hover-deep-orange:hover {
     color: #fff !important;
-    background-color: #ff5722 !important
+    background-color: #77b6ad!important
 }
 
 .w3-pink,
 .w3-hover-pink:hover {
     color: #fff !important;
-    background-color: #e91e63 !important
+    background-color: #77b6ad !important
 }
 
 .w3-purple,
@@ -1625,7 +1616,7 @@ a {
 .w3-red,
 .w3-hover-red:hover {
     color: #fff !important;
-    background-color: #f44336 !important
+    background-color: #77b6ad !important;
 }
 
 .w3-sand,
@@ -1795,7 +1786,7 @@ a {
 
 .w3-text-red,
 .w3-hover-text-red:hover {
-    color: #f44336 !important
+    color: #77b6ad !important
 }
 
 .w3-text-sand,
@@ -1913,7 +1904,7 @@ a {
 
 .w3-border-deep-orange,
 .w3-hover-border-deep-orange:hover {
-    border-color: #ff5722 !important
+    border-color: #77b6ad !important
 }
 
 .w3-border-pink,
@@ -1933,7 +1924,7 @@ a {
 
 .w3-border-red,
 .w3-hover-border-red:hover {
-    border-color: #f44336 !important
+    border-color: #77b6ad !important
 }
 
 .w3-border-sand,
